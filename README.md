@@ -6,7 +6,7 @@ I was just curious Lorenz attractor can be simulated well with a simple Euler's 
 The example in [Wikipedia page](https://en.wikipedia.org/wiki/Lorenz_system#Python_simulation) uses explicit Runge-Kutta solver of order 4.
 I simply changed the solver to Euler's method, and observed what difference it makes.
 
-As expected, Euler's method do not give accurate results and errors are quite high even when fine time delta is given (t=0 to t=40 with time delta 0.01, 0.001, 0.0001. The figure shows when delta is 0.01). An interesting thing is that while Euler method is not accurate, its solution does not diverge. Therefore, for visual and entertainment purposes, using Euler's method may be acceptable, as in clothes simulation. (A lot of clothes simulations for 3D animation are based on first-order approximation). 
+As expected, Euler's method do not give accurate results and errors are quite high even when a small time delta is given (t=0 to t=40 with time delta 0.01, 0.001, 0.0001. The figure shows when delta is 0.01). An interesting thing is that while Euler method is not accurate, its solution does not diverge. Therefore, for visual and entertainment purposes, using Euler's method may be acceptable, as in clothes simulation. (A lot of clothes simulations for 3D animation are based on first-order approximation). 
 
 Runge-Kutta shows accurate results even when simulated time points are far away, where Euler's method fails (t=0 to t=40 with time delta 0.1). 
 
